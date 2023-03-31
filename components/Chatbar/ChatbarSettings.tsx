@@ -7,6 +7,8 @@ import { Key } from '../Settings/Key';
 import { SidebarButton } from '../Sidebar/SidebarButton';
 import { ClearConversations } from './ClearConversations';
 import { SignOutButton } from '../Sidebar/SignOutButton';
+import { PailPadButton } from '../Links/OpenPailPad';
+import { PailCheckButton } from '../Links/OpenPailCheck';
 
 interface Props {
   lightMode: 'light' | 'dark';
@@ -53,7 +55,8 @@ export const ChatbarSettings: FC<Props> = ({
           onToggleLightMode(lightMode === 'light' ? 'dark' : 'light')
         }
       />
-
+      <PailCheckButton/>
+      <PailPadButton/>
       <SignOutButton/>
     </div>
   );
