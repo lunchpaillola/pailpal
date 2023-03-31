@@ -8,12 +8,15 @@ const SignInPage = () => (
         visibility: hidden;
       }`}
     </style>
+    
   <div style={{ 
     display: 'flex', 
     flexDirection: 'column', 
     justifyContent: 'center', 
     alignItems: 'center', 
-    height: '100vh',
+    height: '100%',
+    width: '100%',
+    margin: '40px',
     backgroundColor: '#1f2de6',
     fontFamily: 'Inter, sans-serif',
     color: 'white',
