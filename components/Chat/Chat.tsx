@@ -27,6 +27,7 @@ interface Props {
   conversation: Conversation;
   models: OpenAIModel[];
   apiKey: string;
+
   serverSideApiKeyIsSet: boolean;
   defaultModelId: OpenAIModelID;
   messageIsStreaming: boolean;
@@ -154,39 +155,31 @@ export const Chat: FC<Props> = memo(
         {!(apiKey || serverSideApiKeyIsSet) ? (
           <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
             <div className="text-center text-4xl font-bold text-black dark:text-white">
-              Welcome to Chatbot UI
+              Welcome to PailPal
             </div>
             <div className="text-center text-lg text-black dark:text-white">
-              <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
+              <div className="mb-8">{`PailPal is the private AI assistant to the team at Lunch Pail Labs.`}</div>
               <div className="mb-2 font-bold">
-                Important: Chatbot UI is 100% unaffiliated with OpenAI.
+                Important: This assistant is based on Chatbot UI and is 100% unaffiliated with OpenAI.
               </div>
             </div>
             <div className="text-center text-gray-500 dark:text-gray-400">
               <div className="mb-2">
-                Chatbot UI allows you to plug in your API key to use this UI
-                with their API.
-              </div>
-              <div className="mb-2">
-                It is <span className="italic">only</span> used to communicate
-                with their API.
-              </div>
-              <div className="mb-2">
                 {t(
-                  'Please set your OpenAI API key in the bottom left of the sidebar.',
+                  'This is a private app only for access by the Lunch Pail team',
                 )}
               </div>
               <div>
                 {t(
-                  "If you don't have an OpenAI API key, you can get one here: ",
+                  "If you want your own, check out Chatbot UI here ",
                 )}
                 <a
-                  href="https://platform.openai.com/account/api-keys"
+                  href="https://www.chatbotui.com/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  openai.com
+                  chatbotui.com/
                 </a>
               </div>
             </div>

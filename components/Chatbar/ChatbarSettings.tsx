@@ -6,6 +6,7 @@ import { Import } from '../Settings/Import';
 import { Key } from '../Settings/Key';
 import { SidebarButton } from '../Sidebar/SidebarButton';
 import { ClearConversations } from './ClearConversations';
+import { SignOutButton } from '../Sidebar/SignOutButton';
 
 interface Props {
   lightMode: 'light' | 'dark';
@@ -53,7 +54,7 @@ export const ChatbarSettings: FC<Props> = ({
         }
       />
 
-      <Key apiKey={apiKey} onApiKeyChange={onApiKeyChange} />
+      <SignOutButton/>
     </div>
   );
 };

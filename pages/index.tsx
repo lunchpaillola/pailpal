@@ -44,6 +44,7 @@ const Home: React.FC<HomeProps> = ({
   serverSideApiKeyIsSet,
   defaultModelId,
 }) => {
+ 
   const { t } = useTranslation('chat');
 
   // STATE ----------------------------------------------
@@ -72,6 +73,7 @@ const Home: React.FC<HomeProps> = ({
   // REFS ----------------------------------------------
 
   const stopConversationRef = useRef<boolean>(false);
+  
 
   // FETCH RESPONSE ----------------------------------------------
 
@@ -550,6 +552,7 @@ const Home: React.FC<HomeProps> = ({
   // ON LOAD --------------------------------------------
 
   useEffect(() => {
+   
     const theme = localStorage.getItem('theme');
     if (theme) {
       setLightMode(theme as 'dark' | 'light');
@@ -620,8 +623,8 @@ const Home: React.FC<HomeProps> = ({
   return (
     <>
       <Head>
-        <title>Chatbot UI</title>
-        <meta name="description" content="ChatGPT but better." />
+        <title>Pail Pal</title>
+        <meta name="description" content="The Lunch Pail personal assistant" />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
