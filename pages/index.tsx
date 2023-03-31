@@ -623,7 +623,7 @@ const Home: React.FC<HomeProps> = ({
   return (
     <>
       <Head>
-        <title>Pail Pal</title>
+        <title>🧱 Pail Pal</title>
         <meta name="description" content="The Lunch Pail personal assistant" />
         <meta
           name="viewport"

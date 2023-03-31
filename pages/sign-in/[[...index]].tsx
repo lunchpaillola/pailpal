@@ -21,8 +21,11 @@ const SignInPage = () => (
     padding: '0 20px'
   }}>
     <h1 style={{ fontSize: '44px', fontWeight: 900 }}>Welcome to Pail Pal</h1>
-    <h2 style={{ fontSize: '24px', fontWeight: 400, margin: '40px' }}>
-      Pail Pal is the private AI assistant for the team at  <a href="https://www.lunchpaillabs.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'underline' }}>Lunch Pail Labs</a>. If you are a Lunch Pail team member, please sign in below.
+    <h2 style={{ fontSize: '24px', fontWeight: 400,}}>
+      Pail Pal is the private AI assistant for the team at  <a href="https://www.lunchpaillabs.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'underline' }}>Lunch Pail Labs</a>.
+    </h2>
+    <h2 style={{ fontSize: '24px', fontWeight: 400, marginBottom: '40px' }}>
+      If you are a Lunch Pail team member, please sign in below.
     </h2>
     <SignIn path="/sign-in" routing="path" afterSignInUrl="/" />
   </div>
