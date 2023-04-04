@@ -5,6 +5,7 @@ import { initializeAgentExecutor } from "langchain/agents";
 import { SerpAPI } from "langchain/tools";
 import { NextApiRequest, NextApiResponse } from 'next';
 
+ 
 dotenv.config();
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
  const domain = req.body.domain;
@@ -13,11 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   return res.status(400).json({ error: "Missing domain parameter" });
 }
 
-if (domain) {
-  return res.status(200).json({ message: "This works" });
-}
 
-/*
 try {
 
 const template = "Can you provide a brief overview of {domain}, including pricing information? Additionally, could you provide any information about whether the product has an API and the names of the tools it has official integrations with. Lastly, could you provide the direct links to the web pages of the product's help resources, docs, or documentation pages";
@@ -54,5 +51,4 @@ console.log(`Got output ${result.output}`);
  // Send an error response to the client
  res.status(500).json({ error: "Error processing request" });
 }
-*/
 }
