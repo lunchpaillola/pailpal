@@ -5,7 +5,10 @@ import { initializeAgentExecutor } from "langchain/agents";
 import { SerpAPI } from "langchain/tools";
 import { NextApiRequest, NextApiResponse } from 'next';
 
- 
+export const config = {
+  runtime: 'edge',
+} 
+
 dotenv.config();
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
  const domain = req.body.domain;
