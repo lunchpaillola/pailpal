@@ -16,7 +16,7 @@ import { useRouter } from "next/router";
 //   "/foo"           for pages/foo/index.js
 //   "/foo/bar"       for pages/foo/bar.js
 //   "/foo/[...bar]"  for pages/foo/[...bar].js
-const publicPages = ["/sign-in/[[...index]]", "/api/lang"];
+const publicPages = ["/sign-in/[[...index]]"];
 
 const inter = Inter({ subsets: ['latin'] });
 
