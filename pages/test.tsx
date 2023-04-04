@@ -5,7 +5,7 @@ export default function MyComponent() {
 
   const handleClick = async () => {
     console.log("Button clicked!");
-    const response = await fetch("/api/chains/productsearch", {
+    const response = await fetch("/api/chains/searchproduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
